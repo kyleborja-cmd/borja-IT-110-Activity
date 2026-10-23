@@ -99,6 +99,13 @@ class LoginScreen extends StatelessWidget {
                           ),
                           child: const Text('Sign in'),
                         ),
+                        const SizedBox(height: 8),
+                        TextButton.icon(
+                          onPressed: () =>
+                              Navigator.pushNamed(context, '/report'),
+                          icon: const Icon(Icons.flag_outlined),
+                          label: const Text('Submit a report'),
+                        ),
                         const SizedBox(height: 18),
                         const Text(
                           'UI preview only — sign-in is not connected.',
